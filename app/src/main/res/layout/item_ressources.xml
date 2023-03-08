@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imvJa"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/imvK"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ja" />
+
+        <ImageView
+            android:id="@+id/imvK"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/imvYe"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imvJa"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/k" />
+
+        <ImageView
+            android:id="@+id/imvYe"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/imvZ"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imvK"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ye" />
+
+        <ImageView
+            android:id="@+id/imvZ"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toStartOf="@+id/imvXu"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imvYe"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/z" />
+
+        <ImageView
+            android:id="@+id/imvXu"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imvZ"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/xu" />
+
+        <TextView
+            android:id="@+id/txvK"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imvJa"
+            app:layout_constraintStart_toStartOf="@+id/imvJa"
+            app:layout_constraintTop_toBottomOf="@+id/imvJa"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imvK"
+            app:layout_constraintStart_toEndOf="@+id/imvJa"
+            app:layout_constraintTop_toBottomOf="@+id/imvK" />
+
+        <TextView
+            android:id="@+id/txvYe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imvYe"
+            app:layout_constraintStart_toEndOf="@+id/imvK"
+            app:layout_constraintTop_toBottomOf="@+id/imvYe" />
+
+        <TextView
+            android:id="@+id/txvXu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imvZ"
+            app:layout_constraintTop_toBottomOf="@+id/imvXu" />
+
+        <TextView
+            android:id="@+id/txvZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imvZ"
+            app:layout_constraintStart_toEndOf="@+id/imvYe"
+            app:layout_constraintTop_toBottomOf="@+id/imvZ"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
