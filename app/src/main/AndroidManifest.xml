@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Tp1Consortium"
         tools:targetApi="31">
         <activity
-            android:name=".DeliveriesActivity"
+            android:name=".presentation.delivery.DeliveriesActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.Accueil.AccueilActivity"

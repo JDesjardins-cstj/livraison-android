@@ -21,7 +21,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ja" />
+            app:srcCompat="@drawable/jasmalt" />
 
         <ImageView
             android:id="@+id/imvK"
@@ -31,7 +31,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imvJa"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/k" />
+            app:srcCompat="@drawable/kreotrium" />
 
         <ImageView
             android:id="@+id/imvYe"
@@ -41,7 +41,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imvK"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ye" />
+            app:srcCompat="@drawable/yefrium" />
 
         <ImageView
             android:id="@+id/imvZ"
@@ -51,7 +51,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imvYe"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/z" />
+            app:srcCompat="@drawable/zuscum" />
 
         <ImageView
             android:id="@+id/imvXu"
@@ -61,10 +61,10 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imvZ"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/xu" />
+            app:srcCompat="@drawable/xuskian" />
 
         <TextView
-            android:id="@+id/txvK"
+            android:id="@+id/txvJ"
             android:layout_width="wrap_content"
             android:layout_height="18dp"
             android:layout_marginTop="5dp"
@@ -77,7 +77,7 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txvK"
             android:layout_width="wrap_content"
             android:layout_height="18dp"
             android:layout_marginTop="5dp"

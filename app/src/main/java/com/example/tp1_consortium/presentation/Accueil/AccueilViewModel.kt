@@ -1,4 +1,7 @@
 package com.example.tp1_consortium.presentation.Accueil
 
-class AccueilViewModel {
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+
+class AccueilViewModel(application: Application): AndroidViewModel(application) {
 }
