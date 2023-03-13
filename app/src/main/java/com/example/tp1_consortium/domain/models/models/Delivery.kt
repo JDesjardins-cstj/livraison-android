@@ -1,4 +1,4 @@
-package com.example.tp1_consortium.domain.models
+package com.example.tp1_consortium.domain.models.models
 
 class Delivery (val idDelivery:Int,
                 val jasmalt: Double = 0.0,

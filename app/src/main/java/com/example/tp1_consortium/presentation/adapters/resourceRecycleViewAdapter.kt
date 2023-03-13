@@ -3,12 +3,10 @@ package com.example.tp1_consortium.presentation.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.tp1_consortium.R
 import com.example.tp1_consortium.databinding.ItemRessourcesBinding
-import com.example.tp1_consortium.domain.models.Trader
+import com.example.tp1_consortium.domain.models.models.Trader
 
 class resourceRecycleViewAdapter(var resources: List<Trader> = listOf())
     : RecyclerView.Adapter<resourceRecycleViewAdapter.ViewHolder>(){
