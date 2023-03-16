@@ -1,14 +1,15 @@
 package com.example.tp1_consortium.presentation.delivery
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
-import com.example.tp1_consortium.R
 import com.example.tp1_consortium.databinding.ActivityDeliveriesBinding
-import com.example.tp1_consortium.presentation.Accueil.AccueilUiState
+import com.example.tp1_consortium.presentation.newDelivery.newDeliveryActitity
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
@@ -26,17 +27,26 @@ class DeliveriesActivity : AppCompatActivity() {
                 DeliveriesUiState.Empty -> Unit
                 is DeliveriesUiState.Error -> TODO()
                 is DeliveriesUiState.Success -> {
-                    val nom =  "bon retour " + it.trader.name
-                    binding.txvbonRetour.setText("aaa")
+                    binding.txvbonRetour.setText(intent.getStringExtra(traderName))
                  }
             }
         }.launchIn(lifecycleScope)
+
+
+        binding.fabAjout.setOnClickListener {
+            startActivity(newDeliveryActitity.newIntent(this))
+        }
     }
 
 
+
+
     companion object {
-        fun newIntent(context : Context) : Intent {
-            return Intent(context, DeliveriesActivity::class.java)
+        var traderName: String = "placeHolder"
+        fun newIntent(context : Context,traderNameActivity:String) : Intent {
+            val intent = Intent(context, DeliveriesActivity::class.java)
+            intent.putExtra(traderName,traderNameActivity)
+            return intent
         }
     }
 }

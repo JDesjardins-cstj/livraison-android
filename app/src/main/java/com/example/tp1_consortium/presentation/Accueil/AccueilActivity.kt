@@ -59,7 +59,7 @@ class AccueilActivity : AppCompatActivity() {
                 val zuscum = trader.zuscum
                 viewModel.saveName(nom)
                 viewModel.saveRessources(jasmalt,kreotrium,xuskian,yefrium,zuscum)
-                startActivity(DeliveriesActivity.newIntent(this))
+                startActivity(DeliveriesActivity.newIntent(this,trader.name))
             }
 
         }
