@@ -1,8 +1,11 @@
 package com.example.tp1_consortium.domain.models.models
 
-class Delivery (val idDelivery:Int,
-                val jasmalt: Double = 0.0,
-                val kreotrium: Double = 0.0,
-                val xuskian: Double = 0.0,
-                val yefrium:Double=0.0,
-                val zuscum:Double=0.0 )
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+class Delivery (
+                var jasmalt: Double = 0.0,
+                var kreotrium: Double = 0.0,
+                var xuskian: Double = 0.0,
+                var yefrium:Double=0.0,
+                var zuscum:Double=0.0 )

@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/incResources" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnChargement"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="@string/chargement"
@@ -50,14 +50,14 @@
         app:layout_constraintTop_toBottomOf="@+id/btnOuvrir" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnTeleverser"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="@string/televerser"
         app:icon="@drawable/baseline_cloud_upload_24"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintEnd_toEndOf="@+id/btnChargement"
+        app:layout_constraintStart_toStartOf="@+id/btnChargement"
+        app:layout_constraintTop_toBottomOf="@+id/btnChargement" />
 
     <include
         android:id="@+id/incResources"

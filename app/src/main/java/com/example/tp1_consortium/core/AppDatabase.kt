@@ -9,11 +9,11 @@ import com.example.tp1_consortium.domain.models.models.Delivery
 import com.example.tp1_consortium.domain.models.repositories.DeliveryRepository
 import java.util.concurrent.Executors
 
-@Database(entities = [Delivery::class], version = 1)
+//@Database(entities = [Delivery::class], version = 1)
 abstract class AppDatabase: RoomDatabase() {
 
     //Changer la ligne ici: dans le TP DeliveryRepository
-    abstract fun noteRepository(): DeliveryRepository
+    //abstract fun noteRepository(): DeliveryRepository
 
     companion object {
         @Volatile
