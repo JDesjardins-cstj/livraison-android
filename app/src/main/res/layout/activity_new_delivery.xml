@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.newDelivery.livraison"
+    tools:layout_editor_absoluteX="14dp"
+    tools:layout_editor_absoluteY="-33dp">
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldJasmalt6"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/imvJasmalt5"
+        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt5">
+
+    </com.google.android.material.slider.Slider>
+
+    <ImageView
+        android:id="@+id/imvJasmalt5"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="340dp"
+        android:src="@drawable/zuscum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
+
+    <TextView
+        android:id="@+id/txvKreotriumNb4"
+        android:layout_width="52dp"
+        android:layout_height="17dp"
+        android:text="Jasmalt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sldJasmalt6"
+        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <TextView
+        android:id="@+id/txvJasmalt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Zuscum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvJasmalt5" />
+
+    <ImageView
+        android:id="@+id/imvJasmalt4"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="240dp"
+        android:src="@drawable/yefrium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldJasmalt5"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt6"
+        app:layout_constraintStart_toEndOf="@+id/imvJasmalt4"
+        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt4">
+
+    </com.google.android.material.slider.Slider>
+
+    <TextView
+        android:id="@+id/txvKreotriumNb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jasmalt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/sldJasmalt5"
+        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/txvJasmalt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Yefrium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvJasmalt4" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldJasmalt4"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt5"
+        app:layout_constraintStart_toEndOf="@+id/imvJasmalt3"
+        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt3">
+
+    </com.google.android.material.slider.Slider>
+
+    <ImageView
+        android:id="@+id/imvJasmalt3"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/xuskian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
+
+    <TextView
+        android:id="@+id/txvKreotriumNb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jasmalt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sldJasmalt4"
+        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <TextView
+        android:id="@+id/txvJasmalt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Xuskian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvJasmalt3" />
+
+    <TextView
+        android:id="@+id/txvLivraison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shipping"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="84dp" />
+
+    <ImageView
+        android:id="@+id/imvJasmalt"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/jasmalt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/jasmalt" />
+
+    <ImageView
+        android:id="@+id/imvJasmalt2"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/jasmalt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvJasmalt"
+        app:srcCompat="@drawable/kreotrium" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldJasmalt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt3"
+        app:layout_constraintStart_toEndOf="@+id/imvJasmalt"
+        app:layout_constraintTop_toBottomOf="@+id/txvLivraison">
+
+    </com.google.android.material.slider.Slider>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sldJasmalt3"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt4"
+        app:layout_constraintStart_toEndOf="@+id/imvJasmalt2"
+        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt">
+
+    </com.google.android.material.slider.Slider>
+
+    <TextView
+        android:id="@+id/txvJasmalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/kreotrium"
+        android:text="Jasmalt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvJasmalt" />
+
+    <TextView
+        android:id="@+id/txvJasmalt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Kreotrium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvJasmalt2" />
+
+    <TextView
+        android:id="@+id/txvjasmaltNb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jasmalt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/sldJasmalt"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <TextView
+        android:id="@+id/txvKreotriumNb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jasmalt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/sldJasmalt3"
+        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_save_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84541726" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
