@@ -1,12 +1,11 @@
-package com.example.tp1_consortium.domain.models.repositories
+package com.example.tp1_consortium.domain.repositories
 
 import android.content.Context
-import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.example.tp1_consortium.core.Constants.dataStore
-import  com.example.tp1_consortium.domain.models.models.Trader
+import com.example.tp1_consortium.domain.models.Trader
 import kotlinx.coroutines.flow.map
 
 class UserPreferencesRepository(private val context:Context) {

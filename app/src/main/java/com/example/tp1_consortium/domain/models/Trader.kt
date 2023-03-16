@@ -1,4 +1,4 @@
-package com.example.tp1_consortium.domain.models.models
+package com.example.tp1_consortium.domain.models
 
 data class Trader(
     var name: String = "",

@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tp1_consortium.R
 import com.example.tp1_consortium.databinding.ItemRessourcesBinding
-import com.example.tp1_consortium.domain.models.models.Trader
+import com.example.tp1_consortium.domain.models.Delivery
 
-class resourceRecycleViewAdapter(var resources: List<Trader> = listOf())
+class resourceRecycleViewAdapter(var deliveries: List<Delivery> = listOf())
     : RecyclerView.Adapter<resourceRecycleViewAdapter.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -17,23 +17,23 @@ class resourceRecycleViewAdapter(var resources: List<Trader> = listOf())
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val resource = resources[position]
-        holder.bind(resource)
+        val delivery = deliveries[position]
+        holder.bind(delivery)
     }
 
-    override fun getItemCount(): Int = resources.size
+    override fun getItemCount(): Int = deliveries.size
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = ItemRessourcesBinding.bind(view)
 
-        fun bind(resource: Trader) {
+        fun bind(resource: Delivery) {
            with(binding)
            {
-               txvK.text = resource.kreotrium.toString()
-               txvXu.text = resource.xuskian.toString()
-               txvYe.text = resource.yefrium.toString()
-               txvZ.text = resource.zuscum.toString()
-               txvJ.text = resource.jasmalt.toString()
+               txvK.text=String.format("%.2f",resource.kreotrium.toString())
+               txvXu.text=String.format("%.2f",resource.xuskian.toString())
+               txvYe.text=String.format("%.2f", resource.yefrium.toString())
+               txvZ.text=String.format("%.2f",resource.zuscum.toString())
+               txvJ.text=String.format("%.2f",resource.jasmalt.toString())
            }
         }
     }

@@ -5,23 +5,18 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tp1_consortium.presentation.delivery.DeliveriesActivity
 import com.example.tp1_consortium.databinding.ActivityAccueilBinding
-import com.example.tp1_consortium.domain.models.models.Trader
-import com.example.tp1_consortium.presentation.adapters.resourceRecycleViewAdapter
+import com.example.tp1_consortium.domain.models.Trader
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import kotlin.random.Random
-import kotlin.random.Random.Default.nextDouble
-import kotlin.random.Random.Default.nextFloat
 import kotlin.random.Random.Default.nextInt
 
 class AccueilActivity : AppCompatActivity() {
 
     private val viewModel : AccueilViewModel by viewModels()
     private lateinit var binding : ActivityAccueilBinding
-    private lateinit var trader:Trader
+    private lateinit var trader: Trader
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAccueilBinding.inflate(layoutInflater)
@@ -51,7 +46,7 @@ class AccueilActivity : AppCompatActivity() {
         binding.btnOuvrir.setOnClickListener{
             if(binding.edtNom.text.length == 0)
             {
-                Toast.makeText(this, "Le nom nme peut pas etre vide", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Le nom ne peut pas etre vide", Toast.LENGTH_LONG).show()
             }
             else
             {
@@ -73,7 +68,7 @@ class AccueilActivity : AppCompatActivity() {
 
             if(binding.edtNom.text.length == 0)
             {
-                Toast.makeText(this, "Le nom nme peut pas etre vide", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Le nom ne peut pas etre vide", Toast.LENGTH_LONG).show()
             }
             else
             {
@@ -91,8 +86,22 @@ class AccueilActivity : AppCompatActivity() {
 
             }
         }
-    }
+        binding.btnTeleverser.setOnClickListener {
+            if(binding.edtNom.text.length == 0)
+            {
+                Toast.makeText(this, "Le nom ne peut pas etre vide", Toast.LENGTH_LONG).show()
+            }
+            else
+            {
+                onDeleteAll()
+                Toast.makeText(this, "Le nom ne peut pas etre vide", Toast.LENGTH_LONG).show()
+            }
+        }
 
+    }
+private fun onDeleteAll(){
+    viewModel.deleteAll()
+}
 
 
 

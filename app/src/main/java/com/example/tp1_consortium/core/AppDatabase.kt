@@ -5,15 +5,14 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.tp1_consortium.domain.models.models.Delivery
-import com.example.tp1_consortium.domain.models.repositories.DeliveryRepository
+import com.example.tp1_consortium.domain.models.Delivery
+import com.example.tp1_consortium.domain.repositories.DeliveryRepository
 import java.util.concurrent.Executors
 
-//@Database(entities = [Delivery::class], version = 1)
+@Database(entities = [Delivery::class], version = 1)
 abstract class AppDatabase: RoomDatabase() {
 
-    //Changer la ligne ici: dans le TP DeliveryRepository
-    //abstract fun noteRepository(): DeliveryRepository
+    abstract fun delireryRepository(): DeliveryRepository
 
     companion object {
         @Volatile
@@ -25,7 +24,7 @@ abstract class AppDatabase: RoomDatabase() {
             }
 
         private fun buildDatabase(context: Context) =
-            Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "notes") //notes = nom du fichier sql dans le téléphone
+            Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "deliveries") //notes = nom du fichier sql dans le téléphone
                 // prepopulate the database after onCreate was called
                 .addCallback(object : Callback() {
                     override fun onCreate(db: SupportSQLiteDatabase) {
