@@ -6,7 +6,8 @@ import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.example.tp1_consortium.core.Constants.dataStore
 import com.example.tp1_consortium.domain.models.Trader
-import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.*
 
 class UserPreferencesRepository(private val context:Context) {
 
@@ -49,5 +50,10 @@ class UserPreferencesRepository(private val context:Context) {
 
 
         }
+    }
+    fun refreshAll():Flow<Flow<Trader>> {
+        return flow {
+            emit(traderPreferences)
+        }.flowOn(Dispatchers.IO)
     }
 }

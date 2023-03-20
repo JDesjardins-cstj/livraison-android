@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Tp1Consortium"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.newDelivery.newDeliveryActitity"
+            android:name=".presentation.newDelivery.NewDeliveryActitity"
             android:exported="false"
             android:label="@string/title_activity_livraison"
             android:theme="@style/Theme.Tp1Consortium.NoActionBar" />

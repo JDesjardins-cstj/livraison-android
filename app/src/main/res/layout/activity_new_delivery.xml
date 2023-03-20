@@ -9,13 +9,13 @@
     tools:layout_editor_absoluteY="-33dp">
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/sldJasmalt6"
+        android:id="@+id/sldZuscum"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginStart="12dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toEndOf="@+id/imvJasmalt5"
-        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt5">
+        app:layout_constraintTop_toBottomOf="@+id/sldYerium">
 
     </com.google.android.material.slider.Slider>
 
@@ -30,24 +30,23 @@
         app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
 
     <TextView
-        android:id="@+id/txvKreotriumNb4"
+        android:id="@+id/txvZuscumNb"
         android:layout_width="52dp"
         android:layout_height="17dp"
         android:text="Jasmalt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sldZuscum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sldJasmalt6"
-        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintStart_toEndOf="@+id/sldZuscum"
+        app:layout_constraintTop_toTopOf="@+id/sldZuscum" />
 
     <TextView
         android:id="@+id/txvJasmalt5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="Zuscum"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imvJasmalt5"
+        app:layout_constraintStart_toStartOf="@+id/imvJasmalt5"
         app:layout_constraintTop_toBottomOf="@+id/imvJasmalt5" />
 
     <ImageView
@@ -61,46 +60,45 @@
         app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/sldJasmalt5"
+        android:id="@+id/sldYerium"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt6"
+        app:layout_constraintBottom_toTopOf="@+id/sldZuscum"
         app:layout_constraintStart_toEndOf="@+id/imvJasmalt4"
-        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt4">
+        app:layout_constraintTop_toBottomOf="@+id/sldXuskian">
 
     </com.google.android.material.slider.Slider>
 
     <TextView
-        android:id="@+id/txvKreotriumNb3"
+        android:id="@+id/txvYefriumNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jasmalt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sldYerium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/sldJasmalt5"
-        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintStart_toEndOf="@+id/sldYerium"
+        app:layout_constraintTop_toTopOf="@+id/sldYerium" />
 
     <TextView
         android:id="@+id/txvJasmalt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="Yefrium"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imvJasmalt4"
+        app:layout_constraintStart_toStartOf="@+id/imvJasmalt4"
         app:layout_constraintTop_toBottomOf="@+id/imvJasmalt4" />
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/sldJasmalt4"
+        android:id="@+id/sldXuskian"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt5"
+        app:layout_constraintBottom_toTopOf="@+id/sldYerium"
         app:layout_constraintStart_toEndOf="@+id/imvJasmalt3"
-        app:layout_constraintTop_toBottomOf="@+id/sldJasmalt3">
+        app:layout_constraintTop_toBottomOf="@+id/sldKreotrium">
 
     </com.google.android.material.slider.Slider>
 
@@ -115,24 +113,23 @@
         app:layout_constraintTop_toBottomOf="@+id/txvJasmalt" />
 
     <TextView
-        android:id="@+id/txvKreotriumNb2"
+        android:id="@+id/txvXuskianNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jasmalt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sldXuskian"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sldJasmalt4"
-        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintStart_toEndOf="@+id/sldXuskian"
+        app:layout_constraintTop_toTopOf="@+id/sldXuskian" />
 
     <TextView
         android:id="@+id/txvJasmalt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="Xuskian"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imvJasmalt3"
+        app:layout_constraintStart_toStartOf="@+id/imvJasmalt3"
         app:layout_constraintTop_toBottomOf="@+id/imvJasmalt3" />
 
     <TextView
@@ -180,18 +177,18 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt3"
+        app:layout_constraintBottom_toTopOf="@+id/sldKreotrium"
         app:layout_constraintStart_toEndOf="@+id/imvJasmalt"
         app:layout_constraintTop_toBottomOf="@+id/txvLivraison">
 
     </com.google.android.material.slider.Slider>
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/sldJasmalt3"
+        android:id="@+id/sldKreotrium"
         android:layout_width="250dp"
         android:layout_height="75dp"
         android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/sldJasmalt4"
+        app:layout_constraintBottom_toTopOf="@+id/sldXuskian"
         app:layout_constraintStart_toEndOf="@+id/imvJasmalt2"
         app:layout_constraintTop_toBottomOf="@+id/sldJasmalt">
 
@@ -204,19 +201,18 @@
         android:layout_marginTop="4dp"
         android:src="@drawable/kreotrium"
         android:text="Jasmalt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imvJasmalt"
+        app:layout_constraintStart_toStartOf="@+id/imvJasmalt"
         app:layout_constraintTop_toBottomOf="@+id/imvJasmalt" />
 
     <TextView
         android:id="@+id/txvJasmalt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="Kreotrium"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imvJasmalt2"
+        app:layout_constraintStart_toStartOf="@+id/imvJasmalt2"
         app:layout_constraintTop_toBottomOf="@+id/imvJasmalt2" />
 
     <TextView
@@ -224,24 +220,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jasmalt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sldJasmalt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/sldJasmalt"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintTop_toTopOf="@+id/sldJasmalt" />
 
     <TextView
         android:id="@+id/txvKreotriumNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jasmalt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sldKreotrium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toEndOf="@+id/sldJasmalt3"
-        app:layout_constraintTop_toBottomOf="@+id/txvjasmaltNb"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintStart_toEndOf="@+id/sldKreotrium"
+        app:layout_constraintTop_toTopOf="@+id/sldKreotrium" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"

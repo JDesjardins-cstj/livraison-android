@@ -1,15 +1,13 @@
 package com.example.tp1_consortium.presentation.delivery
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.tp1_consortium.databinding.ActivityDeliveriesBinding
-import com.example.tp1_consortium.presentation.newDelivery.newDeliveryActitity
+import com.example.tp1_consortium.presentation.newDelivery.NewDeliveryActitity
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
@@ -34,7 +32,7 @@ class DeliveriesActivity : AppCompatActivity() {
 
 
         binding.fabAjout.setOnClickListener {
-            startActivity(newDeliveryActitity.newIntent(this))
+            startActivity(NewDeliveryActitity.newIntent(this))
         }
     }
 
