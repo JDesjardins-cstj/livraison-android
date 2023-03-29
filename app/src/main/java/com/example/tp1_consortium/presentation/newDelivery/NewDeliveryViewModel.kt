@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.tp1_consortium.core.AppDatabase
+import com.example.tp1_consortium.domain.models.Delivery
 import com.example.tp1_consortium.domain.models.Trader
 import com.example.tp1_consortium.domain.repositories.TraderPreferencesRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -31,5 +32,10 @@ class NewDeliveryViewModel(application : Application) : AndroidViewModel(applica
         }
     }
     //TODO: faire la function saveNote
-    //fun saveDelivery()
+    fun saveDelivery(jasmalt:Float,kreotrium:Float,xuskian:Float,yefrium:Float,zuscum:Float)
+    {
+        viewModelScope.launch {
+            val delivery = Delivery(jasmalt,kreotrium,xuskian,yefrium,zuscum)
+        }
+    }
 }

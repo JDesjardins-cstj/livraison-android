@@ -54,7 +54,13 @@ class NewDeliveryActitity : AppCompatActivity() {
         binding.sldZuscum.addOnChangeListener { _, value, _ ->  binding.txvZuscumNb.text = String.format( "%.2f",value) }
 
         binding.fabSave.setOnClickListener{
-            //TODO: faire le bouton
+            val amountJasmalt = binding.sldJasmalt.value
+            val amountKreotrium = binding.sldJasmalt.value
+            val amountXuskian = binding.sldJasmalt.value
+            val amountYefrium = binding.sldJasmalt.value
+            val amountZuscum = binding.sldJasmalt.value
+
+            viewModel.saveDelivery(amountJasmalt,amountKreotrium,amountXuskian,amountYefrium,amountZuscum)
         }
 
     }
