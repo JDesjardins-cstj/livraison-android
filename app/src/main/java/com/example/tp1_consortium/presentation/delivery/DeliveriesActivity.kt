@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
+import com.example.tp1_consortium.R
 import com.example.tp1_consortium.databinding.ActivityDeliveriesBinding
 import com.example.tp1_consortium.presentation.newDelivery.NewDeliveryActitity
 import kotlinx.coroutines.flow.launchIn
@@ -25,7 +26,8 @@ class DeliveriesActivity : AppCompatActivity() {
                 DeliveriesUiState.Empty -> Unit
                 is DeliveriesUiState.Error -> TODO()
                 is DeliveriesUiState.Success -> {
-                    binding.txvbonRetour.setText(intent.getStringExtra(traderName))
+                    //intent.getStringExtra(traderName)
+                    binding.txvbonRetour.setText(getString(R.string.bonRetour, it.trader.name ))
                  }
             }
         }.launchIn(lifecycleScope)

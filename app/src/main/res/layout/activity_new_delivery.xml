@@ -23,7 +23,7 @@
         android:id="@+id/imvJasmalt5"
         android:layout_width="50sp"
         android:layout_height="50sp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="340dp"
         android:src="@drawable/zuscum"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +33,9 @@
         android:id="@+id/txvZuscumNb"
         android:layout_width="52dp"
         android:layout_height="17dp"
+        android:layout_marginStart="16dp"
         android:text="Jasmalt"
         app:layout_constraintBottom_toBottomOf="@+id/sldZuscum"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sldZuscum"
         app:layout_constraintTop_toTopOf="@+id/sldZuscum" />
 
@@ -72,12 +72,11 @@
 
     <TextView
         android:id="@+id/txvYefriumNb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
         android:text="Jasmalt"
         app:layout_constraintBottom_toBottomOf="@+id/sldYerium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toEndOf="@+id/sldYerium"
         app:layout_constraintTop_toTopOf="@+id/sldYerium" />
 
@@ -116,9 +115,9 @@
         android:id="@+id/txvXuskianNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Jasmalt"
         app:layout_constraintBottom_toBottomOf="@+id/sldXuskian"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/sldXuskian"
         app:layout_constraintTop_toTopOf="@+id/sldXuskian" />
 
@@ -154,7 +153,7 @@
         android:id="@+id/imvJasmalt"
         android:layout_width="50sp"
         android:layout_height="50sp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/jasmalt"
         app:layout_constraintStart_toStartOf="parent"
@@ -165,7 +164,7 @@
         android:id="@+id/imvJasmalt2"
         android:layout_width="50sp"
         android:layout_height="50sp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="40dp"
         android:src="@drawable/kreotrium"
         app:layout_constraintStart_toStartOf="parent"
@@ -219,10 +218,9 @@
         android:id="@+id/txvjasmaltNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Jasmalt"
         app:layout_constraintBottom_toBottomOf="@+id/sldJasmalt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/sldJasmalt"
         app:layout_constraintTop_toTopOf="@+id/sldJasmalt" />
 
@@ -230,15 +228,14 @@
         android:id="@+id/txvKreotriumNb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Jasmalt"
         app:layout_constraintBottom_toBottomOf="@+id/sldKreotrium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/sldKreotrium"
         app:layout_constraintTop_toTopOf="@+id/sldKreotrium" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabSave"
         android:layout_width="60dp"
         android:layout_height="52dp"
         android:layout_marginEnd="16dp"

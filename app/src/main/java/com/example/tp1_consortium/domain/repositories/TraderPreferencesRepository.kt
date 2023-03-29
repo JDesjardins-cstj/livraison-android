@@ -6,10 +6,9 @@ import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.example.tp1_consortium.core.Constants.dataStore
 import com.example.tp1_consortium.domain.models.Trader
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 
-class UserPreferencesRepository(private val context:Context) {
+class TraderPreferencesRepository(private val context:Context) {
 
     object PreferencesKeys {
         val USERNAME = stringPreferencesKey("username")

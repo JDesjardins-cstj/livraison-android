@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.tp1_consortium.core.AppDatabase
 import com.example.tp1_consortium.domain.models.Trader
-import com.example.tp1_consortium.domain.repositories.UserPreferencesRepository
+import com.example.tp1_consortium.domain.repositories.TraderPreferencesRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 
 class AccueilViewModel(application: Application): AndroidViewModel(application) {
     private val _accueilUiState = MutableStateFlow<AccueilUiState>(AccueilUiState.Empty)
-    private val userPreferencesRepository = UserPreferencesRepository(application)
+    private val traderPreferencesRepository = TraderPreferencesRepository(application)
     private val deliveryRepository = AppDatabase.getInstance(application).delireryRepository()
     val accueilUiState = _accueilUiState.asStateFlow()
 
@@ -23,7 +23,7 @@ class AccueilViewModel(application: Application): AndroidViewModel(application) 
         var preferences = Trader()
 
         viewModelScope.launch {
-            userPreferencesRepository.traderPreferences.collect {
+            traderPreferencesRepository.traderPreferences.collect {
                 preferences = it
                 _accueilUiState.update {
                     return@update AccueilUiState.Success(preferences)
@@ -33,14 +33,14 @@ class AccueilViewModel(application: Application): AndroidViewModel(application) 
     }
     fun saveName(name: String) {
         viewModelScope.launch {
-            userPreferencesRepository.saveName(name)
+            traderPreferencesRepository.saveName(name)
         }
     }
 
     fun saveRessources(jasmalt: Float,kreotrium: Float, xuskian: Float, yefrium: Float, zuscum: Float )
     {
         viewModelScope.launch {
-            userPreferencesRepository.saveRessources(jasmalt,kreotrium,xuskian,yefrium,zuscum)
+            traderPreferencesRepository.saveRessources(jasmalt,kreotrium,xuskian,yefrium,zuscum)
         }
     }
 

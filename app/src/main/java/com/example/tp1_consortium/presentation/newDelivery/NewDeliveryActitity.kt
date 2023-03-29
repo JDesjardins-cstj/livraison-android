@@ -35,6 +35,12 @@ class NewDeliveryActitity : AppCompatActivity() {
                     binding.sldXuskian.valueTo = it.trader.xuskian
                     binding.sldYerium.valueTo = it.trader.yefrium
                     binding.sldZuscum.valueTo = it.trader.zuscum
+                    binding.txvjasmaltNb.text = it.trader.jasmalt.toString()
+                    binding.txvKreotriumNb.text = it.trader.kreotrium.toString()
+                    binding.txvXuskianNb.text = it.trader.xuskian.toString()
+                    binding.txvYefriumNb.text = it.trader.yefrium.toString()
+                    binding.txvZuscumNb.text = it.trader.zuscum.toString()
+
 
 
                 }
@@ -47,7 +53,13 @@ class NewDeliveryActitity : AppCompatActivity() {
         binding.sldYerium.addOnChangeListener { _, value, _ ->  binding.txvYefriumNb.text = String.format( "%.2f",value) }
         binding.sldZuscum.addOnChangeListener { _, value, _ ->  binding.txvZuscumNb.text = String.format( "%.2f",value) }
 
+        binding.fabSave.setOnClickListener{
+            //TODO: faire le bouton
+        }
+
     }
+
+
 
 
     companion object {

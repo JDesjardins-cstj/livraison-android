@@ -6,6 +6,6 @@ import com.example.tp1_consortium.domain.models.Trader
 sealed class DeliveriesUiState {
 
     object Empty : DeliveriesUiState()
-    class Success(val delivery: List<Delivery>): DeliveriesUiState()
+    class Success(val delivery: List<Delivery>,val trader: Trader): DeliveriesUiState()
     class Error(val exception: Exception) : DeliveriesUiState()
 }
