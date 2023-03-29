@@ -41,8 +41,11 @@ class NewDeliveryActitity : AppCompatActivity() {
             }
         }.launchIn(lifecycleScope)
 
-        binding.sldYerium.addOnChangeListener { _, _, _ -> binding.sldYerium.value  }
-
+        binding.sldJasmalt.addOnChangeListener { _, value, _ ->  binding.txvjasmaltNb.text = String.format( "%.2f",value) }
+        binding.sldKreotrium.addOnChangeListener { _, value, _ ->  binding.txvKreotriumNb.text = String.format( "%.2f",value) }
+        binding.sldXuskian.addOnChangeListener { _, value, _ ->  binding.txvXuskianNb.text = String.format( "%.2f",value) }
+        binding.sldYerium.addOnChangeListener { _, value, _ ->  binding.txvYefriumNb.text = String.format( "%.2f",value) }
+        binding.sldZuscum.addOnChangeListener { _, value, _ ->  binding.txvZuscumNb.text = String.format( "%.2f",value) }
 
     }
 

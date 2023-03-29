@@ -51,9 +51,4 @@ class UserPreferencesRepository(private val context:Context) {
 
         }
     }
-    fun refreshAll():Flow<Flow<Trader>> {
-        return flow {
-            emit(traderPreferences)
-        }.flowOn(Dispatchers.IO)
-    }
 }
