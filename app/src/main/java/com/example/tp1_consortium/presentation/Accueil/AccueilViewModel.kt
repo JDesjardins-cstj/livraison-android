@@ -37,6 +37,13 @@ class AccueilViewModel(application: Application): AndroidViewModel(application) 
         }
     }
 
+    fun recharger(jasmalt: Float,kreotrium: Float, xuskian: Float, yefrium: Float, zuscum: Float )
+    {
+        viewModelScope.launch {
+            traderPreferencesRepository.recharge(jasmalt,kreotrium,xuskian,yefrium,zuscum)
+        }
+    }
+
     fun saveRessources(jasmalt: Float,kreotrium: Float, xuskian: Float, yefrium: Float, zuscum: Float )
     {
         viewModelScope.launch {

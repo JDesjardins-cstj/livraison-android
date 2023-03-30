@@ -7,6 +7,7 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import com.example.tp1_consortium.core.Constants.dataStore
 import com.example.tp1_consortium.domain.models.Trader
 import kotlinx.coroutines.flow.*
+import kotlin.random.Random
 
 class TraderPreferencesRepository(private val context:Context) {
 
@@ -49,5 +50,19 @@ class TraderPreferencesRepository(private val context:Context) {
 
 
         }
+    }
+
+    suspend fun recharge(jasmalt: Float,kreotrium: Float, xuskian: Float, yefrium: Float, zuscum: Float) {
+        // on additionne le nombre de resossource de chaque element
+        // et on l'envoi dans le datastore (bd local)
+        var jasmalt =jasmalt + Random.nextInt(50, 200)
+        var kreotrium = kreotrium + Random.nextInt(50, 200)
+        var xuskian = xuskian + Random.nextInt(50, 200)
+        var yefrium = yefrium + Random.nextInt(50, 200)
+        var zuscum = zuscum + Random.nextInt(50, 200)
+
+        saveRessources(jasmalt,kreotrium,xuskian,yefrium,zuscum)
+
+
     }
 }

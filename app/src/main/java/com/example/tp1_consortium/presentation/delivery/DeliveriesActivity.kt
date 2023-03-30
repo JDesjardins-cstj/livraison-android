@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.tp1_consortium.R
 import com.example.tp1_consortium.databinding.ActivityDeliveriesBinding
 import com.example.tp1_consortium.presentation.adapters.DeliveryRecycleViewAdapter
-import com.example.tp1_consortium.presentation.newDelivery.NewDeliveryActitity
+import com.example.tp1_consortium.presentation.newDelivery.NewDeliveryActivity
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
@@ -26,13 +26,14 @@ class DeliveriesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        // affiche les données sur l'écran
         binding.rcvDeliveries.layoutManager = GridLayoutManager(this, 1)
         binding.rcvDeliveries.adapter = deliveryRecyclerViewAdapter
 
         viewModel.deliveriesUiState.onEach {
             when(it){
                 DeliveriesUiState.Empty -> Unit
-                is DeliveriesUiState.Error -> TODO()
+                is DeliveriesUiState.Error -> it.exception
                 is DeliveriesUiState.Success -> {
                     binding.txvbonRetour.setText(getString(R.string.bonRetour, it.trader.name ))
                     deliveryRecyclerViewAdapter.deliveries = it.delivery
@@ -43,7 +44,7 @@ class DeliveriesActivity : AppCompatActivity() {
 
 
         binding.fabAjout.setOnClickListener {
-            startActivity(NewDeliveryActitity.newIntent(this))
+            startActivity(NewDeliveryActivity.newIntent(this))
         }
     }
 
