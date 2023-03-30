@@ -41,7 +41,30 @@ class NewDeliveryActitity : AppCompatActivity() {
                     binding.txvYefriumNb.text = it.trader.yefrium.toString()
                     binding.txvZuscumNb.text = it.trader.zuscum.toString()
 
+                    if(binding.sldJasmalt.valueTo == 0.0.toFloat())
+                    {
+                        binding.sldJasmalt.isEnabled = false
+                    }
 
+                    if(binding.sldKreotrium.valueTo == 0.0.toFloat())
+                    {
+                        binding.sldKreotrium.isEnabled = false
+                    }
+
+                    if(binding.sldXuskian.valueTo == 0.0.toFloat())
+                    {
+                        binding.sldXuskian.isEnabled = false
+                    }
+
+                    if(binding.sldYerium.valueTo == 0.0.toFloat())
+                    {
+                        binding.sldYerium.isEnabled = false
+                    }
+
+                    if(binding.sldZuscum.valueTo == 0.0.toFloat())
+                    {
+                        binding.sldZuscum.isEnabled = false
+                    }
 
                 }
             }
@@ -55,12 +78,31 @@ class NewDeliveryActitity : AppCompatActivity() {
 
         binding.fabSave.setOnClickListener{
             val amountJasmalt = binding.sldJasmalt.value
-            val amountKreotrium = binding.sldJasmalt.value
-            val amountXuskian = binding.sldJasmalt.value
-            val amountYefrium = binding.sldJasmalt.value
-            val amountZuscum = binding.sldJasmalt.value
+            val amountKreotrium = binding.sldKreotrium.value
+            val amountXuskian = binding.sldXuskian.value
+            val amountYefrium = binding.sldYerium.value
+            val amountZuscum = binding.sldZuscum.value
+
+            //soustraire les montants du convoi
+            val amountJasmaltSubstract = binding.sldJasmalt.valueTo - amountJasmalt
+            val amountKreotriunSubstract = binding.sldKreotrium.valueTo - amountJasmalt
+            val amountXuskianSubstract = binding.sldXuskian.valueTo - amountJasmalt
+            val amountYefriumSubstract = binding.sldYerium.valueTo - amountJasmalt
+            val amountZuscumSubstract = binding.sldZuscum.valueTo - amountJasmalt
+
+            // le slider est au maximum pour prevenir des problemes
+            binding.sldKreotrium.value = binding.sldKreotrium.valueTo
+            binding.sldJasmalt.value = binding.sldJasmalt.valueTo
+            binding.sldXuskian.value = binding.sldXuskian.valueTo
+            binding.sldZuscum.value = binding.sldZuscum.valueTo
+            binding.sldYerium.value = binding.sldYerium.valueTo
 
             viewModel.saveDelivery(amountJasmalt,amountKreotrium,amountXuskian,amountYefrium,amountZuscum)
+            viewModel.saveRessources(amountJasmaltSubstract,amountKreotriunSubstract,amountXuskianSubstract,amountYefriumSubstract,amountZuscumSubstract)
+
+            finish()
+
+
         }
 
     }

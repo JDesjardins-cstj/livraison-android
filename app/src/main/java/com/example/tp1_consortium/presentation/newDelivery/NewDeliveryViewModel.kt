@@ -17,10 +17,8 @@ class NewDeliveryViewModel(application : Application) : AndroidViewModel(applica
     private val traderPreferencesRepository = TraderPreferencesRepository(application)
     private val _newDeliveryUiState = MutableStateFlow<NewDeliveryUiState>(NewDeliveryUiState.Empty)
     val newDeliveryUiState = _newDeliveryUiState.asStateFlow()
-
+    var preferences = Trader()
     init {
-        var preferences = Trader()
-
         viewModelScope.launch {
             traderPreferencesRepository.traderPreferences.collect {
                 preferences = it
@@ -36,6 +34,18 @@ class NewDeliveryViewModel(application : Application) : AndroidViewModel(applica
     {
         viewModelScope.launch {
             val delivery = Delivery(jasmalt,kreotrium,xuskian,yefrium,zuscum)
+            newDeliveryRepository.insert(delivery)
+            _newDeliveryUiState.update {
+
+                NewDeliveryUiState.Success(preferences)
+            }
+        }
+    }
+
+    fun saveRessources(jasmalt: Float,kreotrium: Float, xuskian: Float, yefrium: Float, zuscum: Float )
+    {
+        viewModelScope.launch {
+            traderPreferencesRepository.saveRessources(jasmalt,kreotrium,xuskian,yefrium,zuscum)
         }
     }
 }

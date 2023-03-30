@@ -94,7 +94,6 @@ class AccueilActivity : AppCompatActivity() {
             else
             {
                 onDeleteAll()
-                Toast.makeText(this, "Le nom ne peut pas etre vide", Toast.LENGTH_LONG).show()
             }
         }
 
