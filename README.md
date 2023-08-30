@@ -4,8 +4,8 @@ Un application android qui gere les marchandises
 
 ## comment l'utiliser
 
-<img src="https://github.com/JDesjardins-cstj/tp1-consortium/assets/89429623/33c415f9-bd76-467a-9958-cdb65db6239f" height=400/>
-<img src=https://github.com/JDesjardins-cstj/tp1-consortium/assets/89429623/159a13af-0221-4d3c-b2fb-94d6711bcf5c height=400/>
+<img src="https://github.com/JDesjardins-cstj/tp1-consortium/assets/89429623/33c415f9-bd76-467a-9958-cdb65db6239f" height=600/>
+<img src=https://github.com/JDesjardins-cstj/tp1-consortium/assets/89429623/159a13af-0221-4d3c-b2fb-94d6711bcf5c height=600/>
 
 ##
 il faut écrire son nom
